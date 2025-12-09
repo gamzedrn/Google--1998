@@ -1,101 +1,166 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3"
-        charset="utf-8"></script>
-    <script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8">
-    </script>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = {
-            "autoplay": "on",
-            "unmuteOverlay": "hidden",
-            "showSwfDownload": true
-        };
-    </script>
-    <script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
-    <script type="text/javascript">
-        __wm.init("https://web.archive.org/web");
-        __wm.wombat("http://www.google.com:80/", "19981202230410", "https://web.archive.org/", "web",
-            "https://web-static.archive.org/_static/",
-            "912639850");
-    </script>
-    <link rel="stylesheet" type="text/css"
-        href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3">
-    <link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv">
-    <!-- End Wayback Rewrite JS Include -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google!</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            background-color: #EEEEEE;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .search-input {
+            width: 300px;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        .search-buttons {
+            margin: 10px 0;
+        }
+
+        .search-buttons input {
+            padding: 5px 15px;
+            margin: 0 5px;
+        }
+
+        .boxes-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 10px auto 0;
+            display: flex;
+        }
+
+        .box {
+            padding: 15px 10px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box-left {
+            background-color: #7EE5DA;
+            width: 37%;
+        }
+
+        .box-center {
+            background-color: #70CCC2;
+            width: 30%;
+            font-size: 13px;
+        }
+
+        .box-right {
+            background-color: #62B3AA;
+            width: 33%;
+            font-size: 13px;
+        }
+
+        .box-right form {
+            margin-top: 5px;
+        }
+
+        .box-right input[type="text"] {
+            width: 120px;
+            margin: 5px 0;
+            padding: 3px;
+        }
+
+        .box-right input[type="submit"] {
+            padding: 3px 10px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
-<body bgcolor="#FFFFFF" background="/web/19981202230410im_/http://www.google.com/alpha.jpg">
+<body>
+    <div class="container">
+        <!-- Google logosu -->
+        <div class="logo">
+            <img src="google.jpg" alt="">
+        </div>
 
-    <form method="GET" action="/web/19981202230410/http://www.google.com/search">
-        <center>
-            <img src="google.jpg" width="351" height="113" alt="Google!">
-        </center>
+        <!-- Arama kutusu bölümü -->
+        <div class="search-box">
+            <form>
+                Search the web using Google!<br>
+                <input type="text" class="search-input"><br>
+                <div class="search-buttons">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm feeling lucky">
+                </div>
+            </form>
+        </div>
 
-        <center>
-            <table border="0" width="90%">
-                <tbody>
-                    <tr>
-                        <td bgcolor="#EEEEEE" colspan="3">
-                            <center>
-                                Search the web using Google! <br>
-                                <input type="text" name="q" value="" size="40"><br>
-                                <input type="submit" value="Google Search">
-                                <input type="submit" name="sa" value="I'm feeling lucky"><br>
-                            </center>
+        <!-- Üç renkli kutu -->
+        <div class="boxes-container">
+            <!-- Sol kutu: Özel aramalar -->
+            <div class="box box-left">
+                <div>Special Searches</div>
+                <div><a href="#">Stanford Search</a></div>
+                <div><a href="#">Linux Search</a></div>
+            </div>
 
-                            <form method="GET"
-                                action="https://web.archive.org/web/19981202230410/http://www.findmail.com/cgi-bin/subscribe.py">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="37%" bgcolor="#7EE5DA">
-                            <center>
-                                Special Searches<br>
-                                <a href="/web/19981202230410/http://www.google.com/stanford">Stanford Search</a><br>
-                                <a href="/web/19981202230410/http://www.google.com/linux">Linux Search</a><br>
-                            </center>
-                        </td>
-                        <td bgcolor="#70CCC2">
-                            <center>
-                                <font size="-1">
-                                    <a href="help.html">Help!</a> <br>
-                                    <a href="about.html">About Google!</a> <br>
-                                    <a href="company.html">Company Info</a> <br>
-                                    <a href="stickers.html">Google! Logos</a> <br>
-                                </font>
-                            </center>
-                        </td>
-                        <td align="right" bgcolor="#62B3AA">
-                            <center>
-                                <font size="-1">
-                                    Get Google! <br> updates monthly: <br>
-                                    <input type="hidden" name="listname" value="google-friends">
-                                    <input type="text" name="emailaddr" value="your e-mail"> <br>
-                                    <input type="submit" name="SubmitAction" value="Subscribe">
-                                    &nbsp;&nbsp;
-                                    <font size="-1"><a
-                                            href="https://web.archive.org/web/19981202230410/http://www.findmail.com/list/google-friends/">Archive</a>
-                                    </font>
-                                </font>
-                            </center>
-                        </td>
+            <!-- Orta kutu: Linkler -->
+            <div class="box box-center">
+                <div><a href="#">Help!</a></div>
+                <div><a href="#">About Google!</a></div>
+                <div><a href="#">Company Info</a></div>
+                <div><a href="#">Google Logos</a></div>
+            </div>
 
-                    </tr>
-                </tbody>
-            </table>
-        </center>
+            <!-- Sağ kutu: Bülten aboneliği -->
+            <div class="box box-right">
+                <div>Get Google!</div>
+                <div>updates monthly:</div>
+                <form>
+                    <input type="text" value="your e-mail"><br>
+                    <input type="submit" value="Subscribe">
+                    <a href="#">Archive</a>
+                </form>
+            </div>
+        </div>
 
-        <p>
-        </p>
-        <center>
-            <font size="-1">Copyright ©1998 Google Inc.</font>
-        </center>
-    </form>
+        <!-- Alt bilgi -->
+        <div class="footer">
+            Copyright ©1998 Google Inc.
+        </div>
+    </div>
 </body>
 
 </html>
